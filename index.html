@@ -1,0 +1,54 @@
+<!--developer - @SerGioPlay-->
+<!--version: 1.1-->
+<!--CosmoPlayer - web - player-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CosmoPlayer - web - player</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!-- Optional - input form -->
+<div class="content_p">
+    <div class="info">
+        <div class="custom-file-input-wrapper">
+            <input type="file" id="video-input" accept="video/*" class="custom-file-input">
+            <label class="custom-file-label" for="video-input"></label>
+            <div class="custom-file-progress"></div>
+          </div>
+      <button id="load-button" class="button" type="button">Воспроизвести</button>
+    </div>
+  
+    <!-- MAIN SECTION FOR PLAY BUTTON -->
+  
+    <div id="video-container">
+      <video id="video" preload="metadata" controls poster="/resources/1662119204_75-kartinkin-net-p-fonovie-izobrazheniya-dlya-rabochego-stola-79.jpg">
+  
+        <!--  you can add a src url to the video source to play that instead of the input form -->
+        <source id="video-source" type="video">
+      </video>
+      <button id="play-button" type="button"><span class="play-icon"><i class="fa fa-solid fa-play"></i></span></button>
+    </div>
+  
+    <!-- END OF MAIN SECTION FOR PLAY BUTTON -->
+  
+    <!-- Optional -->
+    <div class="info">
+      <div class="one">
+        <p>Название видео</p>
+       </div>
+       <button title="полноэкранный режим" id="fullscreen-button" type="button"><span class="fullscreen-icon"><i class="fa fa-solid fa-expand"></i></span></button>
+    
+    </div>
+  
+    <div class="info-description">
+      <h3>Как это работает?</h3>
+      <p>Просто добавьте видеофайл и нажмите "Воспроизвести", чтобы посмотреть его. Это может быть любое видео!</p>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+  
+</body>
+</html>

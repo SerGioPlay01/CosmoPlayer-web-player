@@ -1,0 +1,295 @@
+:root {
+	--brown: #b62ada69;
+	--cream: #3007524d;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 1em;
+	align-items: center;
+	background-image: url(/resources/1614408201_38-p-temnie-animirovannie-foni-78.jpg);
+    color: #ffffff;
+	/* optional */
+	gap: 1em;
+	font-family: "IBM Plex Mono";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	user-select: none;
+}
+
+i {
+    color: #ddd;
+    
+}
+
+ /* Custom styles for file input */
+ .custom-file-input {
+    display: none; /* Hide the default file input */
+  }
+
+  .custom-file-label {
+    background-color: purple;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+
+  .custom-file-label::after {
+    content: "Загрузить видео";
+  }
+
+  .custom-file-input:focus + .custom-file-label {
+    outline: 2px solid #ffffff;
+    outline-offset: -2px;
+  }
+
+  .custom-file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .custom-file-input-wrapper .custom-file-input {
+    position: absolute;
+    left: 0;
+    top: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .custom-file-input-wrapper .custom-file-label {
+    background-color: purple;
+    color: white;
+    padding: 8px 120px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .custom-file-input-wrapper .custom-file-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: purple;
+    transition: width 0.3s ease-in-out;
+  }
+
+.content_p {
+     background-color: #0e0d0d86;
+     backdrop-filter: blur(10px);
+     border: 2px solid #550b861e;
+     box-shadow: 5px 5px 10px #47026e59,
+                        -5px -5px 10px #47026e59;
+     padding: 2%;
+     border-radius: 20px;
+     margin: 1% auto;
+     width: 35%;
+}
+
+/* MAIN STYLES FOR PLAY BUTTON */
+#video-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 394px;
+	width: 700px;
+	border: 3px solid var(--brown);
+	position: relative;
+	cursor: none;
+	max-width: 100%;
+    margin-bottom: 5%;
+}
+
+#play-button {
+	position: absolute;
+	border: 3px solid var(--brown);
+	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--cream);
+	opacity: 1;
+	cursor: none;
+    color: #ddd;
+}
+
+#fullscreen-button {
+    background-color: var(--cream);
+    border: 3px solid var(--brown);
+    width: 70px;
+    border-radius: 50px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+#video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.play-icon {
+	font-size: 20px;
+	color: var(--brown);
+}
+
+/* END OF MAIN STYLES FOR PLAY BUTTON */
+
+/* Optional */
+
+a {
+	text-decoration: none;
+	
+}
+
+::placeholder {
+	color: #ffffff;
+	opacity: 30%;
+}
+
+::selection {
+	background-color: var(--brown);
+	color: var(--cream);
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	width: 700px;
+	height: 50px;
+	max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.button {
+	border: 3px solid var(--brown);
+	background-color: var(--brown);
+	color: #ddd;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: center;
+	font-family: "IBM Plex Mono";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #420a70;
+}
+
+.button > p {
+	margin: 0;
+    color: #0e0d0d;
+}
+
+.button  a {
+    color: #ddd;
+}
+
+.one {
+	width: 100%;
+	padding: 0 20px;
+	border: 3px solid var(--brown);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	background-color: var(--cream);
+    color: #ffffff;
+	font-family: "IBM Plex Mono";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.description {
+	height: fit-content;
+	box-sizing: border-box;
+	padding: 20px 20px;
+	border: 3px solid var(--brown);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--cream);
+	font-size: 16px;
+}
+
+.description > * {
+	margin: 0;
+}
+
+.link {
+	border-bottom: 2px solid var(--brown);
+    color: #e88cff;
+}
+
+.link:hover {
+	color: #9e36ff;
+}
+
+
+@media (width < 1100px) {
+    .content_p {
+        width: 90%;
+        margin: 0 auto;
+       
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+   
+      .custom-file-input-wrapper .custom-file-label {
+        background-color: var(--brown);
+        border: 3px solid #420a70;
+        color: white;
+        padding: 15px 10px;
+        text-align: center;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+   
+    .button {
+        width: max-content;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    #play-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    #video-container {
+        width: 98%;
+    }
+   
+    .one {
+        font-size: 1rem;
+        height: 50px;
+        border-radius: 4px;
+        text-align: center;
+    }
+    #fullscreen-button {
+       min-height: 55px;
+       border-radius: 4px;
+    }
+    .info-description  {
+       text-align: center;
+    }
+}
