@@ -6,7 +6,7 @@
 
 ## Установка
 
-1. Клонируйте репозиторий: git clone https://github.com/[your-username]/video-player.git
+1. Клонируйте репозиторий: git clone https://github.com/SerGioPlay01/CosmoPlayer-web-player.git
 2. Перейдите в директорию проекта: cd video-player
 3. Запустите проект: откройте файл index.html в вашем браузере.
 
