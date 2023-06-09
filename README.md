@@ -1,5 +1,5 @@
 # CosmoPlayer-web-player
-![cosmoplayer](https://github.com/SerGioPlay01/CosmoPlayer-web-player/blob/main/CosmoPlayer-web-player.png?raw=true)
+![cosmoplayer](https://github.com/SerGioPlay01/CosmoPlayer-web-player/blob/main/CosmoPlayer-web-player%20(2).png?raw=true)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Проект Video Player представляет собой настраиваемый видеоплеер для воспроизведения локальных видеофайлов. Он предоставляет пользовательский интерфейс с функциями управления воспроизведением, полноэкранным режимом, анимацией и другими возможностями.
